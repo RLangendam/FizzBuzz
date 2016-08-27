@@ -12,7 +12,7 @@ void FizzBuzz(OutputIterator output) {
 	std::size_t counter(1u);
 	std::generate_n(output, outputCount, [&counter](){
 		std::string result;
-		if(counter == 3u) {
+		if(counter % 3u == 0) {
 			result = fizz;
 		}
 		else if(counter == 5u) {
