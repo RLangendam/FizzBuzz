@@ -15,10 +15,10 @@ void FizzBuzz(OutputIterator output) {
 		if(counter % 3u == 0u) {
 			result = fizz;
 		}
-		else if(counter % 5u == 0u) {
-			result = buzz;
+		if(counter % 5u == 0u) {
+			result += buzz;
 		}
-		else {
+		if(result.empty()) {
 			result = std::to_string(counter);
 		}
 		++counter;

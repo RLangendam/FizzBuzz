@@ -13,4 +13,5 @@ SCENARIO("FizzBuzz") {
 	REQUIRE(output.at(4u) == buzz);
 	REQUIRE(output.at(5u) == fizz);
 	REQUIRE(output.at(9u) == buzz);
+	REQUIRE(output.at(14u) == fizz + buzz);
 }
