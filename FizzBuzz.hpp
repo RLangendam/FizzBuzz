@@ -5,6 +5,7 @@
 
 static std::size_t const outputCount = 100u;
 static std::string const fizz("Fizz");
+static std::string const buzz("Buzz");
 
 template <typename OutputIterator>
 void FizzBuzz(OutputIterator output) {
@@ -13,6 +14,9 @@ void FizzBuzz(OutputIterator output) {
 		std::string result;
 		if(counter == 3u) {
 			result = fizz;
+		}
+		else if(counter == 5u) {
+			result = buzz;
 		}
 		else {
 			result = std::to_string(counter);
